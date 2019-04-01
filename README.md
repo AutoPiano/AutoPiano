@@ -174,6 +174,13 @@ playNote(notename = 'C4', duration = '2n') {
 
 所以笔者转向另一种实现思路，**解析musicxml**，但奈何这个过程耗时耗力，目前只完成了一半，部分细节还没有完全解析正确，如果读者有好的想法，可以在评论区留言探讨。
 
+## 欢迎贡献协作
+
+- 贡献首页展示的随机歌词： https://github.com/WarpPrism/AutoPiano/blob/master/src/config/lyrics.js
+- 贡献快速入门的弹奏方法： https://github.com/WarpPrism/AutoPiano/blob/master/src/config/easyScore.js
+
+FORK时，请遵循GPL开源协议。
+
 ## 最后
 
 > 最后再贴一下体验地址： http://crystalworld.gitee.io/qpiano/#/
@@ -185,4 +192,4 @@ playNote(notename = 'C4', duration = '2n') {
 ![1554105945684.jpg](https://i.loli.net/2019/04/01/5ca1c6860c01c.jpg)
 
 
-原创不易，转载请注明出处~
+原创不易，转载分享时请注明出处~

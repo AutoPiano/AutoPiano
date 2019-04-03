@@ -3,6 +3,7 @@ export default [
   {
     name: `小星星`,
     content: `sshhjjh ggffdds <br/> hhggffd hhggffd <br/> sshhjjh ggffdds`,
+    degree: 1,
     lyrics: `Little Star <br>
             Twinkle, twinkle, little star <br>
             How I wonder what you are <br>
@@ -13,6 +14,7 @@ export default [
   {
     name: `新年好`,
     content: `ssso fffs sfhhgfd dfgg fdfs sfdo ads <br/> ssso fffs sfhhgfd dfgg fdfs sfdo ads`,
+    degree: 1,
     lyrics: `新年好呀，新年好呀<br>
             祝贺大家新年好<br>
             我们唱歌，我们跳舞<br>
@@ -20,11 +22,15 @@ export default [
   },
   {
     name: `因为爱情`,
-    content: `opsspsdfd spfdpfdsp passpfd fdd dff <br/>opsspsdfd spfdpfdsp passpfd spsfhd <br/> dfhf hhfdhh jklllklkkhf <br/> hfhj hjhhs psfdpfdpjh <br/> dfhf hhfdhh jklllklkkhf <br/> hfhj hjhhs psfdpfdpfd fdfs`
+    content: `opsspsdfd spfdpfdsp passpfd fdd dff <br/>opsspsdfd spfdpfdsp passpfd spsfhd <br/> dfhf hhfdhh jklllklkkhf <br/> hfhj hjhhs psfdpfdpjh <br/> dfhf hhfdhh jklllklkkhf <br/> hfhj hjhhs psfdpfdpfd fdfs`,
+    degree: 3,
+    lyrics: ``
   },
   {
     name: `隐形的翅膀`,
-    content: `osf hf dsss spoo <br> osf hhh jh hdfd sdd <br> jhf hhhjh fdsdp <br> ops fd fs <br> fhl lk jhjl fds ss sl jh fd sdd <br> 停顿 <br> fhl lk jhjl fds ss sl jh fd ds s`
+    content: `osf hf dsss spoo <br> osf hhh jh hdfd sdd <br> jhf hhhjh fdsdp <br> ops fd fs <br> fhl lk jhjl fds ss sl jh fd sdd <br> 停顿 <br> fhl lk jhjl fds ss sl jh fd ds s`,
+    degree: 2,
+    lyrics: ``
   },
   {
     name: `蒲公英的约定`,
@@ -38,6 +44,7 @@ export default [
               hjlh j ~ jhg hf ds ~ ps fdds dh sd <br>
               ssd ffdf fds hhfh ~ hjk llll lkjk jf h <br>
               hjlh j jhg hf ds ~ ps fdds dsps`,
+    degree: 4,
     lyrics: `纸短情长 <br>
     你陪我步入蝉夏 越过城市喧嚣 <br>
     歌声在游走 你榴花般的双眸 <br>
@@ -68,14 +75,16 @@ export default [
               sss sop s f ~ ddd d s ap <br>
               aaa aas d o ~ aas d s as
               sss sop s f ~ ddd d s ap <br>
-              aaa aas d o ~ aas d s as`
+              aaa aas d o ~ aas d s as`,
+    degree: 1
   },
   {
-    name: '晴天 - 周杰伦',
+    name: '晴天',
     content: `fdgf shk lkhs ~ sjj jhh hgf dfgf <br>
               fghf ghk zkll ~ llh hjhg dfgh js j kk <br>
               fdgf shk lkhs ~ sjj jhh hgf dfgf <br>
               fghf ghk zkll ~ llh hjhg pasd fd s s<br>`,
+    degree: 2,
     lyrics: `晴天 - 周杰伦 <br>
       刮风这天我试过握着你手 <br>
       但偏偏雨渐渐大到我看你不见 <br>
@@ -91,13 +100,57 @@ export default [
     content: `fg hhhh hjhg ffff fgfd ss sapa as d dfdf d <br>
               fg hhhh hjhg ffff fgfd ss sapa asos df d ddss <br>
               sdfs h f dhd spf sa sapa asos dfg gfds d <br>
-              sdfs h f dhd spp aso o p a sdos dfd ddss`
+              sdfs h f dhd spp aso o p a sdos dfd ddss`,
+    degree: 3
   },
   {
     name: 'We Wish You A Merry Christmas',
     content: `o s sdsa ppp ~ d dfds aoo <br>
               f fgfd s p ~ oo pdas <br>
               s s sa a s a p o ~ d f d s h o <br>
-              oo pdas ~`
-  }
+              oo pdas ~`,
+    degree: 1
+  },
+  {
+    name: '明天你好',
+    content: `fhhfdhh sffsaff pssp ossf gfdsd <br>
+              ssdfd hh as ~ ppasa ff op <br>
+              psgf fs d fd ofd ~ ssdfd hh as <br>
+              ppasa ff op psgf hs dfg fgfgh fd ~ <br>
+              o dsf ssfjh hjkl llkjh hjkl llkjh hfs psdfd <br>
+              o dsf ssfjh hjkl llkjh hjkl llkjh hfs fd s a s ~`,
+    degree: 4,
+    lyrics: `明天你好 <br>
+    看昨天的我们 走远了<br>
+    在命运广场中央 等待<br>
+    那模糊的 肩膀<br>
+    越奔跑 越渺小<br>
+    曾经 并肩往前的 伙伴<br>
+    在举杯 祝福后都 走散<br>
+    只是那个 夜晚<br>
+    我深深 的都留藏在心坎<br>
+    长大以后 我只能奔跑<br>
+    我多害怕 黑暗中跌倒<br>
+    明天你好 含着泪微笑<br>
+    越美好 越害怕得到<br>
+    每一次哭 又笑着 奔跑<br>
+    一边失去 一边在寻找<br>
+    明天你好 声音多渺小<br>
+    却提醒我 勇敢是什么<br>
+    ...`
+  },
+  {
+    name: '青花瓷',
+    content: `hhfdfdsp dfdso dfdsp sd of<br>
+              sdfh hf f d s ds p sdf h<br>
+              dsps sps spspo dsps sps sfdss<br>
+              opff fdf fdfhf fff dddd dsfd<br>
+              dsps sps spspo opfh hfh hfdss<br>
+              dsd fdds d sp dssp s s s<br>
+              hhfdfp dfhfd hhfdfo dfhds<br>
+              sdf hjhf hffd d sds d sd f hf<br>
+              hhfdfp dfhfd hhfdfo dfhds<br>
+              sdf hjhf hffd d o fd ds~`,
+    degree: 4
+  },
 ]

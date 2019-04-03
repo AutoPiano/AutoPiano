@@ -1,5 +1,5 @@
 
-export default [
+const lyrics =  [
   `长亭外，古道边，芳草碧连天，晚风拂柳笛声残，夕阳山外山...`,
   `你可知Macau，不是我真姓...`,
   `what time will you be here now? it's a quater past seven now...`,
@@ -15,5 +15,15 @@ export default [
   `Now please don't go Most nights I hardly sleep when I'm alone `,
   `我依然爱你 就是唯一的退路 我依然珍惜 时时刻刻的幸福`,
   `只会傻傻的看着天上的星星 你就是那么的纯静`,
-  `我的眼睛望向窗外 幻想我对你的表白`
+  `我的眼睛望向窗外 幻想我对你的表白`,
+  `让蜡烛代替所有灯 让音乐代替话语声 此时无声胜有声`,
+  `当你觉得外面的世界很精彩 我会在这里衷心的祝福你`,
+  `苦海翻起爱恨 在世间难逃避命运`,
+  `不管按怎过按怎变 按怎的人 永远的永远我是彼个人`,
+  `Rage your dream 風も　光満ちてゆく Rage your dream 忘れないでいて `,
+  `我喜欢 入学时我们稚气的脸庞 我喜欢 毕业季上写满留言的墙`,
+  `如今这里荒草丛生 没有了鲜花 好在曾经拥有你们的春秋和冬夏`
 ]
+
+export default lyrics
+

@@ -1,18 +1,20 @@
 <style lang="less">
 @import url('../assets/style/variable.less');
-.easyscore-container { width: 380px; height: 350px; font-size: 14px; padding: 20px 15px; overflow-y: scroll; overflow-x: hidden; background: rgba(255, 255, 255, .6); border-radius: 5px; border: solid 1px #ddd;
+.easyscore-container { width: 500px; height: 430px; font-size: 14px; padding: 20px 15px; overflow-y: scroll; overflow-x: hidden; background: rgba(255, 255, 255, .6); border-radius: 5px; border: solid 1px #ddd;
   .component-title { margin: 0 0 10px 0; font-size: 18px; font-weight: bold; }
-  .list { width: 100%; padding-left: 25px; line-height: 32px;
+  .list { width: 100%; padding-left: 25px; padding-bottom: 10px; line-height: 32px;
     .list-item {  height: 32px; line-height: 32px; cursor: pointer; list-style: none;
-      &:hover { text-decoration: underline;
-        a { color: @pblue; }
+      a { display: inline-block; min-width: 120px; }
+      a:hover { color: @pblue; text-decoration: underline; }
+      .num { float:left; width: 35px; height: 32px; font-size: 16px; margin-left: -35px; text-align: center; color: @pred; }
+      .difficulty-degree { width: 150px; float: right; text-align: left; 
+        .icon-star { display: inline-block; transform: scale(.7); margin-left: -6px; }
       }
-      .num { float:left; width: 35px; height: 32px; font-size: 16px; margin-left: -35px; text-align: center; color: #666;}
     }
    }
    .content-wrap { width: 100%;
       .info { font-size: 14px; margin: 5px 0; height: 28px; line-height: 28px; text-align: center; background: @pblue; color: #fff; border-radius: 2px; }
-      .return-btn { cursor: pointer; width: 80px; height: 32px; line-height: 32px;
+      .return-btn { cursor: pointer; width: 80px; height: 32px; line-height: 32px; color: @pblue-d;
         &:hover { text-decoration: underline; color: @pblue; }
       }
      .score-item-content { word-wrap: break-word; font-size: 16px; letter-spacing: 0; line-height: 26px; }
@@ -26,9 +28,12 @@
     <p class="component-title">{{ sectionTitle }}</p>
 
     <ol class="list score-list" v-show="listShow">
-      <li class="list-item score-item" v-for="(item, index) in scores" :key="index" @click="clickScoreItem(item)">
+      <li class="list-item score-item" v-for="(item, index) in scores" :key="index">
         <span class="num">{{ index + 1 }}</span>
-        <a href="javascript:;">{{ item.name }}</a>
+        <a href="javascript:;" @click="clickScoreItem(item)">{{ item.name }}</a>
+        <span class="difficulty-degree">
+          <i class="icon-star" v-for="(star, sindex) in new Array(item.degree)" :key="sindex"></i>
+        </span>
       </li>
     </ol>
     <div class="content-wrap" v-show="!listShow">

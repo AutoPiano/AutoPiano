@@ -64,7 +64,7 @@ export default {
   data() {
     return {
       supportShow: false,
-      payType: 'WXPAY'
+      payType: 'ALIPAY'
     }
   },
   methods: {

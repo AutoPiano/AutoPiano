@@ -1,6 +1,12 @@
 [原文链接](https://github.com/WarpPrism/Blog/issues/42)
 
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE) [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+
+Hate 996? Come Here & Relax~
+
+
 最近用Vue + Tone.js做了一款钢琴类web应用，名字定为自由钢琴（AutoPiano），人生如音乐，欢快且自由。
+
 此文权当作该项目的总结和分享~
 
 ## 项目简介
@@ -11,6 +17,7 @@ AutoPiano支持键盘按键和鼠标点击播放，同时琴键上会有按键�
 ![autopiano.png](https://user-gold-cdn.xitu.io/2019/4/1/169d81ff4a11e634?w=1318&h=850&f=png&s=579420)
 
 > 体验地址： http://crystalworld.gitee.io/qpiano/#/
+
 > 项目地址： https://github.com/WarpPrism/AutoPiano
 
 ## 开发这样的应用需要乐理知识吗？

@@ -153,4 +153,41 @@ export default [
               sdf hjhf hffd d o fd ds~`,
     degree: 4
   },
+  {
+    name: '突然好想你(选段)',
+    content: `W U U T YT RT<br>
+              T I IU IU I O Y<br>
+              T R T PP A D S<br>
+              A P OO P U<br>
+              T R T O OO I E R T<br>
+              W U U T YT RT<br>
+              T I I U IU I OY<br>
+              T R T P<br>
+              P A D S AP O OPU<br>
+              T R T OO O I E RT<br>
+              P A S FD<br>
+              S D O DS<br>
+              P A S F D SF<br>
+              P A S FD<br>
+              H D G F D FS<br>
+              P A S F D SS`,
+    degree: 2,
+    lyrics: `
+      最怕空气突然安静<br>
+      最怕朋友突然的关心<br> 
+      最怕回忆突然翻滚<br> 
+      绞痛着不平息<br> 
+      最怕突然听到你的消息<br> 
+      想念如果会有声音<br> 
+      不愿那是悲伤的哭泣<br> 
+      事到如今<br> 
+      终於让自已属於我自已<br> 
+      只剩眼泪还骗不过自己<br> 
+      突然好想你<br> 
+      你会在哪里<br> 
+      过的快乐或委屈<br> 
+      突然好想你<br> 
+      突然锋利的回忆<br> 
+      突然模糊的眼睛`,
+  },
 ]

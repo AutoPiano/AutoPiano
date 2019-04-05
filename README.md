@@ -190,8 +190,8 @@ playNote(notename = 'C4', duration = '2n') {
 ## 欢迎贡献协作
 
 - 贡献代码，直接PR
-- 贡献首页展示的随机歌词： https://github.com/WarpPrism/AutoPiano/blob/master/src/config/lyrics.js
-- 贡献快速入门的弹奏方法： https://github.com/WarpPrism/AutoPiano/blob/master/src/config/easyScore.js
+- 贡献首页展示的随机歌词： https://github.com/WarpPrism/AutoPiano/issues/12
+- 贡献快速入门的弹奏方法： https://github.com/WarpPrism/AutoPiano/issues/9
 
 没想到短时间内能有这么多star(｀・ω・´)，吓得晚上下班回去又继续码代码。。。不过此项目仍不完善，还在不断更新中，特别是入门弹奏谱子比较少，目前只有：
 

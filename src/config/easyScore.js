@@ -153,4 +153,30 @@ export default [
               sdf hjhf hffd d o fd ds~`,
     degree: 4
   },
+  {
+    name: `我的中国心`,
+    content: `e uyutre upo uytyu uop rpouy ttyu yureoe <br/>
+              e uyutre upo uytyu uop rpouy ttyu yureoe <br/>
+              uouu uspp pspo tytyu <br/>
+              uspp psdf fdaop <br/>
+              e u yutre upouytyu <br/>
+              uop apo uy ttyu y u apop`,
+    degree: 2,
+    lyrics: `河山只在我梦萦 <br>
+             祖国已多年未亲近 <br>
+             可是不管怎样也改变不了 <br>
+             我的中国心 <br>
+             洋装虽然穿在身 <br>
+             我心依然是中国心 <br>
+             我的祖先早已把我的一切 <br>
+             烙上中国印 <br>
+             长江 长城 黄山 黄河 <br>
+             在我心中重千斤 <br>
+             无论何时 无论何地 <br>
+             心中一样亲 <br>
+             流在心里的血 <br>
+             澎湃着中华的声音 <br>
+             就算身在他乡也改变不了 <br>
+             我的中国心`
+  },
 ]

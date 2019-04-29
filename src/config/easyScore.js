@@ -155,8 +155,8 @@ export default [
   },
   {
     name: `我的中国心`,
-    content: `e uyutre upo uytyu uop rpouy ttyu yureoe <br/>
-              e uyutre upo uytyu uop rpouy ttyu yureoe <br/>
+    content: `e uyutre upo uytyu uop apouy ttyu yureoe <br/>
+              e uyutre upo uytyu uop apouy ttyu yureoe <br/>
               uouu uspp pspo tytyu <br/>
               uspp psdf fdaop <br/>
               e u yutre upouytyu <br/>

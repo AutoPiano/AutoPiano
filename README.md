@@ -16,7 +16,7 @@ AutoPiano支持键盘按键和鼠标点击播放，同时琴键上会有按键�
 
 ![autopiano.png](https://user-gold-cdn.xitu.io/2019/4/1/169d81ff4a11e634?w=1318&h=850&f=png&s=579420)
 
-> 体验地址： http://crystalworld.gitee.io/qpiano/#/
+> 体验地址： http://www.autopiano.cn
 
 > 项目地址： https://github.com/WarpPrism/AutoPiano
 
@@ -214,7 +214,7 @@ playNote(notename = 'C4', duration = '2n') {
 
 ## 最后
 
-> 最后再贴一下体验地址： http://crystalworld.gitee.io/qpiano/#/
+> 最后再贴一下体验地址： > 体验地址： http://www.autopiano.cn
 
 欢迎体验，分享。
 

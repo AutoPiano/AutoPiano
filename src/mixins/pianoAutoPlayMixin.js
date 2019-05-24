@@ -1,11 +1,11 @@
 // Mixin 说明：按照自定义简谱格式，触发piano组件的自动播放
 // 简谱英文 numbered musical notation
-import { NumScore } from 'config'
+import { ScoreNum } from 'config'
 
 export default {
   data () {
     return {
-      NumScore,
+      ScoreNum,
       playTimers: [],
       // 目前只有C调和 D调，待完善调整
       StepMap: {
@@ -88,19 +88,15 @@ export default {
     // 点击简谱列表播放音乐
     playScoreByName(name = '天空之城') {
       let targetScore
-      for (let k in this.NumScore) {
-        let score = this.NumScore[k]
+      for (let k in this.ScoreNum) {
+        let score = this.ScoreNum[k]
         if (score.name == name) {
           targetScore = score
           break
         }
       }
       if (targetScore) {
-        this.playTimers.forEach((timer) => {
-          clearInterval(timer)
-          timer = null
-        })
-        this.playTimers.splice(0)
+        this.pauseAutoPlay()
         let step = targetScore.step
         let speed = targetScore.speed
         if (this.StepMap[step]) {
@@ -110,6 +106,14 @@ export default {
           }
         }
       }
+    },
+    pauseAutoPlay() {
+      $(`.piano-key`).removeClass('auto-key-active')
+      this.playTimers.forEach((timer) => {
+        clearInterval(timer)
+        timer = null
+      })
+      this.playTimers.splice(0)
     }
   }
 }

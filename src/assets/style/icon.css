@@ -1,5 +1,6 @@
 .icon { background-image: url('../images/sprite.png'); }
 .icon-alipay { display:inline-block; width: 64px; height: 64px; background-position: 0px 0px; vertical-align:top; background-image: url('../images/sprite.png'); }
+.icon-pause { display:inline-block; width: 32px; height: 32px; background-position: -64px -64px; vertical-align:top; background-image: url('../images/sprite.png'); }
 .icon-piano { display:inline-block; width: 64px; height: 64px; background-position: -64px 0px; vertical-align:top; background-image: url('../images/sprite.png'); }
-.icon-star { display:inline-block; width: 32px; height: 32px; background-position: -64px -64px; vertical-align:top; background-image: url('../images/sprite.png'); }
+.icon-star { display:inline-block; width: 32px; height: 32px; background-position: -96px -64px; vertical-align:top; background-image: url('../images/sprite.png'); }
 .icon-wxpay { display:inline-block; width: 64px; height: 64px; background-position: 0px -64px; vertical-align:top; background-image: url('../images/sprite.png'); }

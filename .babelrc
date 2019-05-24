@@ -9,8 +9,7 @@
     "stage-2"
   ],
   "plugins": [
-    "transform-runtime",
-    ["import", { "libraryName": "vant", "style": true }]
+    "transform-runtime"
   ],
   "env": {
     "test": {

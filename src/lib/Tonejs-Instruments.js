@@ -21,7 +21,7 @@ let mapFile = (name) => {
 var SampleLibrary = {
     minify: false,
     ext: '.[mp3|ogg]', // use setExt to change the extensions on all files // do not change this variable //
-    baseUrl: 'static/samples/',
+    baseUrl: '/static/samples/',
     list: ['bass-electric','bassoon','cello','clarinet','contrabass','flute','french-horn','guitar-acoustic','guitar-electric','guitar-nylon', 'harmonium','harp','organ','piano','saxophone','trombone','trumpet','tuba','violin','xylophone'],
     onload: null,
 
@@ -29,11 +29,8 @@ var SampleLibrary = {
         var i
         for (i = 0; i <= this.list.length - 1; i++) {
             for (var property in this[this.list[i]]) {
-
                 this[this.list[i]][property] = this[this.list[i]][property].replace(this.ext, newExt)
             }
-
-
         }
         this.ext = newExt;
         return console.log("sample extensions set to " + this.ext)
@@ -632,8 +629,6 @@ var SampleLibrary = {
         'C6': 'C6.[mp3|ogg]'
 
     }
-
-
 }
 
 export default SampleLibrary

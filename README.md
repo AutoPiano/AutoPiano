@@ -14,7 +14,7 @@ Hate 996? Come Here & Relax~
 
 AutoPiano支持键盘按键和鼠标点击播放，同时琴键上会有按键和音名提示。另外，AutoPiano还有教学的功能，一种方式是``快速入门``，通过简易的谱子按键进行演奏，另一种是``演奏示例``，通过钢琴曲的自动播放来达到演示的目的。目前这两个功能都在持续完善中，如下图所示：
 
-![autopiano.png](https://user-gold-cdn.xitu.io/2019/4/1/169d81ff4a11e634?w=1318&h=850&f=png&s=579420)
+![autopiano.png](https://i.loli.net/2019/05/24/5ce7c48ce8c1093923.png)
 
 > 体验地址： http://www.autopiano.cn
 

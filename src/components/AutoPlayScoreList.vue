@@ -44,25 +44,6 @@
         </span>
       </li>
     </ol>
-
-
-    <p class="component-title">
-      <img src="/static/imgs/lab.png" alt="" class="music-img">
-      <span class="title">MusicXML实验室<span style="font-size: 12px;">&nbsp;beta</span></span>
-    </p>
-
-    <ol class="list score-list">
-      <li class="list-item score-item" v-for="(item, index) in ScoreXml" :key="index">
-        <span class="num">{{ index + 1 }}</span>
-        <a href="javascript:;" @click="clickXMLScoreItem(item)">
-          {{ item.name }}
-        </a>
-        <i class="pause icon-pause" v-show="item.playing" @click="pauseAutoPlay(item)" />
-        <span class="difficulty-degree">
-          <i class="icon-star" v-for="(star, sindex) in new Array(item.degree)" :key="sindex"></i>
-        </span>
-      </li>
-    </ol>
   </div>
 </template>
 

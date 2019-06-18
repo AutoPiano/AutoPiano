@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="user-scalable=no">
+  <meta name="keywords" content="自由钢琴,AutoPiano,autopiano,在线钢琴,自学钢琴,在线弹钢琴,piano online,钢琴曲,乐谱,休闲娱乐,放松,乐理知识">
+  <meta name="description"
+    content="自由钢琴(AutoPiano)是利用HTML5技术开发的在线钢琴应用，致力于为钢琴爱好者、音乐爱好者提供一个优雅、简洁的平台，在学习工作之余可以在线弹钢琴，享受音乐、生活的美好。自由钢琴支持自动演奏和手动演奏，简单易学，快来试试吧~">
+  <meta name="author" content="crystalworld">
+  <meta name="google-site-verification" content="jZwr88wY1PCrh_8cwdXUmjwSZASU82bq3GHXC6lehik">
+  <title>自由钢琴 - AutoPiano</title>
+  <link rel="shortcut icon" href="./favicon.png">
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?af9df715a05051f16ccdd9290cbd02ef";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <script>
+    // 强制http访问
+    if (window.location.href.indexOf('https://www.autopiano.cn') > -1) {
+      window.location.href = 'http://www.autopiano.cn/';
+    }
+    var ua = window.navigator.userAgent
+    if (ua.match(/mobile/i) && ua.indexOf('iPad') < 0) {
+      // 是手机端浏览器 且 不是iPad
+      window.isMobile = true;
+      if (window.location.pathname != '/mobile' && !window['__PRERENDER_INJECTED']) {
+        window.location.pathname = '/mobile';
+      }
+    } else {
+      window.isMobile = false;
+      if (window.location.pathname == '/mobile' && !window['__PRERENDER_INJECTED']) {
+        window.location.pathname = '/';
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/warpprism/cdn@latest/autopiano/static/css/share.min.css">
+  <link href="https://cdn.jsdelivr.net/gh/warpprism/cdn@latest/autopiano/static/css/app.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/warpprism/cdn@latest/autopiano/static/js/manifest.js">
+  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/warpprism/cdn@latest/autopiano/static/js/vendor.js">
+  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/warpprism/cdn@latest/autopiano/static/js/app.js">
+  </script>
+</body>
+
+</html>

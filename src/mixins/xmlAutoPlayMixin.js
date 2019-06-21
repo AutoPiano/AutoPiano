@@ -1,4 +1,5 @@
-// import testScore from '../../parsexml/score_output/七里香.json'
+// import testScore from '../../parsexml/score_output/下一个天亮.json'
+
 import Observe from 'observe'
 export default {
   data() {
@@ -20,7 +21,10 @@ export default {
         }
       }
     })
-    // this.addToPlayQueue(testScore);
+
+    setTimeout(() => {
+      // this.addToPlayQueue(testScore)
+    }, 1e3)
   },
   methods: {
     addToPlayQueue(score) {

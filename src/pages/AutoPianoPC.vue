@@ -1,10 +1,33 @@
+<style lang="less">
+@import url('../assets/style/variable.less');
+.page-pc { width: 100%; min-width: 1280px; height: 100%; padding: 1px; font-family: 'Avenir', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #2c3e50; position: absolute; top: 0; left: 0; overflow-x: scroll;
+  .app-bg { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -100; opacity: 0.5; background-size: cover; background-repeat: no-repeat; transition: all .5s linear; }
+  .app-content { width: 100%; height: 100%; overflow-y: scroll; position: relative;
+    .piano-scroll-wrap { overflow: hidden; }
+    .score-section { width: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .right-drawer { width: 500px; height: 100%; position: fixed; top: 0; right: -500px; z-index: 100; border-left: solid 1px #ccc; transition: all .3s ease-in-out;
+      .trigger { width: 30px; height: 86px; font-size: 16px; text-align: center; padding-top: 7px;  position: absolute; top: 50%; left: -32px; background: @c-red; color: #fff; cursor: pointer; z-index: 101; }
+      // .trigger::before { content: ''; width: 8px; height: 8px; background: #f00;; position: absolute; top: -2px; right: -2px; border-radius: 50%; }
+      .close { width: 20px; height: 20px; line-height: 20px; text-align: center; position: absolute; top: 10px; right: 15px; background: @c-red; color: #fff; cursor: pointer; z-index: 101; }
+      .component-manual-list { width: 100%; height: 100%; background: rgba(255, 255, 255, .9);  border-radius: 0; border: none;
+        // .list-item a { color: #fff; }
+      }
+    }
+    .right-drawer.show { right: 0; }
+  }
+}
+</style>
+
 <template>
-  <div class="page-home">
+  <div class="page-pc">
     <div class="app-bg" :style="appBgStyle"></div>
 
     <div class="app-content">
+      <VueLivere nodeBelowSelector=".blank-page-pc"/>
+      <PageHeader></PageHeader>
+      <RandomLyric></RandomLyric>
       <Piano></Piano>
-      <div class="score-section">
+      <div class="score-section responsive-section-a">
         <ManualPlayScoreList></ManualPlayScoreList>
         <AutoPlayScoreList></AutoPlayScoreList>
       </div>
@@ -13,26 +36,34 @@
         <div class="close" @click="hideRightDrawer">X</div>
         <ManualPlayScoreList></ManualPlayScoreList>
       </div>
-      <VueLivere uid="MTAyMC80MzU0My8yMDA4Mg==" refer="http://www.autopiano.cn" />
+      <div class="blank-page-pc" style="height: 200px;"></div>
+      <PageFooter></PageFooter>
     </div>
-    <PageFooter></PageFooter>
+
   </div>
 </template>
 
 <script>
-import Piano from '@/components/Piano'
+import Observe from 'observe'
+
+import PageHeader from '@/components/PageHeader'
 import PageFooter from '@/components/Footer'
+import RandomLyric from '@/components/RandomLyric'
+import Piano from '@/components/Piano'
 import ManualPlayScoreList from '@/components/ManualPlayScoreList'
 import AutoPlayScoreList from '@/components/AutoPlayScoreList'
 import VueLivere from '@/components/VueLivere'
 
-import { Wallpaper } from '@/config'
+import { mapActions, mapGetters } from 'vuex'
+import { OBEvent, Wallpaper } from '@/config'
 
 export default {
   name: 'AutoPianoPC',
   components: {
-    Piano,
+    PageHeader,
     PageFooter,
+    RandomLyric,
+    Piano,
     ManualPlayScoreList,
     AutoPlayScoreList,
     VueLivere
@@ -40,33 +71,24 @@ export default {
   data() {
     return {
       percent: 0,
-      appBgStyle: '',
       rightDrawerShow: false
     }
   },
-  created() {
-    if (window.isMobile) {
-      // 跳转到mobile页面
-      this.$router.replace({
-        path: '/mobile'
-      })
+  computed: {
+		...mapGetters([
+			'$currentWallpaper'
+    ]),
+    appBgStyle() {
+      return `background-image: url(${this.$currentWallpaper});`
     }
   },
   mounted() {
-    this.setRandomWallPaper()
+    // setTimeout(() => {
+    //   let winHeight = window.innerHeight
+    //   document.documentElement.style.height = winHeight + 'px'
+    // }, 0)
   },
   methods: {
-    // 随机背景壁纸
-    setRandomWallPaper() {
-      let len = Wallpaper.length
-      let random = Math.floor(Math.random() * len)
-      let src = Wallpaper[random] || 'https://i.loli.net/2019/04/28/5cc5bbb538f26.jpg'
-      this.appBgStyle = `background: url(${src}) no-repeat; background-size: cover;`
-
-      if (window['__PRERENDER_INJECTED']) {
-        this.appBgStyle = `background: #eee;`
-      }
-    },
     toggleRightDrawer() {
       this.rightDrawerShow = !this.rightDrawerShow
     },
@@ -76,23 +98,3 @@ export default {
   }
 }
 </script>
-
-<style lang="less">
-@import url('../assets/style/variable.less');
-.page-home { width: 100%; min-width: 1280px; height: 100%; padding: 1px; font-family: 'Avenir', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #2c3e50;  position: absolute; top: 0; left: 0; overflow-x: hidden;
-  .app-bg { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -100; opacity: 0.5; background-size: cover; }
-  .app-content { width: 100%; height: 100%; padding-bottom: 200px; overflow-x: hidden; overflow-y: scroll;
-    .score-section { width: 100%; padding: 0px; display: flex; align-items: center; justify-content: space-around; }
-
-    .right-drawer { width: 500px; height: 100%; position: fixed; top: 0; right: -500px; z-index: 100; border-left: solid 1px #ccc; transition: all .3s ease-in-out;
-      .trigger { width: 30px; height: 86px; font-size: 16px; text-align: center; padding-top: 7px;  position: absolute; top: 50%; left: -32px; background: @pred; color: #fff; cursor: pointer; z-index: 101; }
-      // .trigger::before { content: ''; width: 8px; height: 8px; background: #f00;; position: absolute; top: -2px; right: -2px; border-radius: 50%; }
-      .close { width: 20px; height: 20px; line-height: 20px; text-align: center; position: absolute; top: 10px; right: 15px; background: @pred; color: #fff; cursor: pointer; z-index: 101; }
-      .component-manual-list { width: 100%; height: 100%; background: rgba(255, 255, 255, .9);  border-radius: 0; border: none;
-        // .list-item a { color: #fff; }
-      }
-    }
-    .right-drawer.show { right: 0; }
-  }
-}
-</style>

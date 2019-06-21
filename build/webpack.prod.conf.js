@@ -29,6 +29,11 @@ var webpackConfig = merge(baseWebpackConfig, {
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
+  // output: {
+  //   path: config.build.assetsRoot,
+  //   filename: utils.assetsPath('js/[name].js'),
+  //   chunkFilename: utils.assetsPath('js/[id].js')
+  // },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new CleanWebpackPlugin(),
@@ -44,6 +49,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     // extract css into its own file
     new ExtractTextPlugin({
       filename: utils.assetsPath('css/[name].[contenthash].css')
+      // filename: utils.assetsPath('css/[name].css')
     }),
     // Compress extracted CSS. We are using this plugin so that possible
     // duplicated CSS from different components can be deduped.
@@ -75,9 +81,9 @@ var webpackConfig = merge(baseWebpackConfig, {
       // Required - The path to the webpack-outputted app to prerender.
       staticDir: config.build.assetsRoot,
       // Required - Routes to render.
-      routes: [ '/', '/mobile' ],
+      routes: [ '/', '/mobile', '/links' ],
       minify: {
-        collapseBooleanAttributes: true,
+        collapseBooleanAttributes: false,
         collapseWhitespace: true,
         decodeEntities: true,
         keepClosingSlash: true,
@@ -98,7 +104,7 @@ var webpackConfig = merge(baseWebpackConfig, {
         inject: {
           prerender: true
         },
-        renderAfterTime: 1000,
+        renderAfterTime: 5000,
         headless: true // 设为false则显示chromium窗口
       })
     }),

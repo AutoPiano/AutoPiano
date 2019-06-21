@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
@@ -21,6 +23,8 @@ export default {
 @import url('./assets/style/normalize.css');
 @import url('./assets/style/icon.css');
 @import url('./assets/style/variable.less');
+@import url('./assets/style/responsive.less');
+@import url('./assets/style/sugar.less');
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -40,6 +44,9 @@ export default {
   -ms-user-select: none; /*IE10*/
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch;
+  /* 隐藏滚动条，宽度0 */
+  scrollbar-width: none;
 }
 
 html, body {
@@ -47,10 +54,17 @@ html, body {
   height: 100%;
   user-select: none;
   position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  color: @c-black;
+}
+#app {
+  width: 100%;
+  height: 100%;
 }
 a {
   text-decoration: none;
-  color: @textdark;
+  color: @c-black;
 }
 
 </style>

@@ -48,7 +48,7 @@ AutoPiano支持键盘按键和鼠标点击播放，同时琴键上会有按键�
 .piano-wrap { width: 90%; margin: 20px auto;
   .piano-key-wrap {
     width: 100%;
-    background: @dark;
+    background: @c-black;
     overflow: hidden;
     position: relative;
     .wkey {
@@ -57,7 +57,7 @@ AutoPiano支持键盘按键和鼠标点击播放，同时琴键上会有按键�
       height: 100%;
       margin: 0 auto;
       background: linear-gradient(white 10%, rgb(251, 251, 251) 92%, rgb(220, 220, 220) 93%, white 97%);
-      border: solid 1px @dark;
+      border: solid 1px @c-black;
       border-radius: 0 0 5px 5px;
       position: relative;
       &:active {

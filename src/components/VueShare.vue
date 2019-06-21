@@ -10,7 +10,7 @@
   <div id="share-section">
     <div
       class="social-share"
-      data-title="自由钢琴 | AutoPiano"
+      data-title="自由钢琴 - AutoPiano"
       data-description="人生如音乐，欢快且自由。自由钢琴(AutoPiano)，让你听见内心的声音。"
       data-weibo-title="人生如音乐，欢快且自由。自由钢琴(AutoPiano)，让你听见内心的声音。"
       data-url="http://www.autopiano.cn"
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import { CDN_JSDELIVR_STATIC } from '@/config'
 export default {
   name: 'VueShare',
   mounted() {
@@ -35,7 +36,7 @@ export default {
       let s = d.createElement('script')
       s.type = "text/javascript"
       s.async = true
-      s.src = '/static/js/social-share.min.js'
+      s.src = CDN_JSDELIVR_STATIC + 'js/social-share.min.js'
       e.parentNode.insertBefore(s, e);
     }, 0)
   }

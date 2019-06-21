@@ -40,7 +40,7 @@ export default {
     },
     // 获取音符持续时长
     getNoteDuration(numNotation, timeUnit) {
-      var factor = 1
+      let factor = 1
       if ( numNotation.match(/\([0-9.]*\)/g) ) {
         factor = numNotation.match(/\([0-9.]*\)/g)[0].replace(/[\)\(]/g, '')
       }

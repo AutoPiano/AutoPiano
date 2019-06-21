@@ -442,8 +442,39 @@ export default [
              就算身在他乡也改变不了 <br>
              我的中国心`
   },
+  {
+    name: "伊莎贝拉之歌《约定的梦幻岛》OST",
+    content: `
+    E(^T)YUPOIU TURYE <br/>
+    WEUIOUYAO UOPUOPUYEOU <br/>  
+    E(^T)YUPOIU TURYE <br/> 
+    WEUIOUYAO UOPUOPUYEOU <br/> 
+    (^T)YUPOIU TUOUP <br/>
+    PSAOUPFA OPASAPASDAF <br/> 
+    UPASAPOUYYTOU ERTYTYIUYU <br/>
+    UPASASDODGFDS ERTYUEWE <br/>
+    UPASAPOUYYTOU ERTYTYIUYU <br/>
+    UPASASDODGFDS HSPFAODAAP`,
+    lyrics: ``,
+    degree: 3,
+    author: 'HikamaiC',
+    authorLink: 'https://github.com/Gu-Miao'
+  },
+  {
+    name: "cannon in D",
+    content: `
+    [tf] [wd] [es] [0a] [qp] [8o] [qp] [wa] <br/>
+    [tsf] o [wad] o [eps] u [0oa] u [qip] t [8uo] t [qip] t [woa] y <br/>
+    [tus] a s [wa] [es] f [0h] j [qg] f d g [8f] d s a [qp] o i u [wy] u i <br/>
+    [tuo] o [wo] p o i [etu] u [0u] i u y [qt] E e E [8t] t [qt] E e t [wr] t y <br/>
+    [8wu] [5ry] [6et] [3r] [4e] [1w] [4e] [5t] r [18wtu]`,
+    lyrics: ``,
+    degree: 3,
+    author: 'iamjiangmioamiao',
+    authorLink: ''
+  },
   { name: '遇见',
-  content: 'OU OY UYT TRERTRTYU </br>    OU OD SAS TRERTRTYT </br>    OPASASAPOPO TYUIUIOTYU </br>    OPASASADSDSFO TYUIUIUYTRT </br>    OPASASDSAPO TYUIUIOTTPO </br>    OPASASDSDFO  TYUIUIOTTPO </br>    OPASASDSDFO  TYUYUYOTYUT </br>    OPASASPAOIO </br>    UUUIOUWW YYYUIYWW </br>    TTTYUYRT RERTR </br>    EWEPO YIUYT </br>    TREYYTEERT ',
+  content: 'OU OY UYT TRERTRTYU </br> OU OD SAS TRERTRTYT </br> OPASASAPOPO TYUIUIOTYU </br> OPASASADSDSFO TYUIUIUYTRT </br> OPASASDSAPO TYUIUIOTTPO </br> OPASASDSDFO  TYUIUIOTTPO </br> OPASASDSDFO  TYUYUYOTYUT </br> OPASASPAOIO </br> UUUIOUWW YYYUIYWW </br> TTTYUYRT RERTR </br> EWEPO YIUYT </br> TREYYTEERT ',
   degree: 3,
   author: '',
   authorLink: '',
@@ -467,7 +498,7 @@ export default [
   authorLink: '',
   lyrics: '' },
   { name: '北京欢迎你',
-  content: 'FHFDFDFFDPS FD </br>    DSPSDFHDFJHHDS </br>    DSPSDFHDFJHHF </br>    DFDSHJFPFDDS </br>    FHLHJJH FF HH FH JL ZL HF D H F F </br>    FH LH JL ZL HF HLJ FD FH XZ LL </br>    ',
+  content: 'FHFDFDFFDPS FD </br>DSPSDFHDFJHHDS </br> DSPSDFHDFJHHF </br> DFDSHJFPFDDS </br> FHLHJJH FF HH FH JL ZL HF D H F F </br> FH LH JL ZL HF HLJ FD FH XZ LL </br> ',
   degree: 1,
   author: '',
   authorLink: '',
@@ -617,19 +648,19 @@ export default [
   authorLink: '',
   lyrics: '' },
   { name: '回到过去 ',
-  content: 'TUUYYTRT </br>    　　TRREEW0E </br>    　　EWWTTUUY </br>    　　YTTTREW </br>    　　TUUYYTRYT </br>    　　TRREEW0R </br>    　　EWWW </br>    　　WQ0WQ </br>    　　TUUY </br>    　　YYYTYUUY </br>    　　WRTTRTPO </br>    　　TYTUTTRWW </br>    　　WTYTUTIIUY </br>    　　WTYUU </br>    　　UYUIIUUY </br>    　　YTUUUYYTRT </br>    　　TYTUUUU </br>    　　TTOOUUU </br>    　　TTYYTTTETETY </br>    　　WTYRT',
+  content: 'TUUYYTRT </br> TRREEW0E </br> EWWTTUUY </br> YTTTREW </br> TUUYYTRYT </br> TRREEW0R </br> EWWW </br> WQ0WQ </br> TUUY </br> YYYTYUUY </br> WRTTRTPO </br> TYTUTTRWW </br> WTYTUTIIUY </br> WTYUU </br> UYUIIUUY </br> YTUUUYYTRT </br> TYTUUUU </br> TTOOUUU </br> TTYYTTTETETY </br> WTYRT',
   degree: 1,
   author: '',
   authorLink: '',
   lyrics: '' },
   { name: '亲爱的那不是爱情 ',
-  content: '　　SSSAPPOPOOIUO </br>    　　TPPPPOSUUYYTY </br>    　　UYTRTOO </br>    　　OTPOOO </br>    　　PASSSOIUYTT </br>    　　SSSAPPOPOOIUO </br>    　　TPPPPOSUUYYTY </br>    　　UYTRTOO </br>    　　OTPOOO </br>    　　PASSSOIUYTT </br>    　　UUODFOAASP </br>    　　IIPHGPSSDA </br>    　　OOUDSDFDSU </br>    　　SAOSAAOFFGD </br>    　　UUODFOAASP </br>    　　IIPHGPSSDA </br>    　　OOUDSDFDSS </br>    　　PSHGFDSS',
+  content: 'SSSAPPOPOOIUO </br> TPPPPOSUUYYTY </br> UYTRTOO </br> OTPOOO </br> PASSSOIUYTT </br> SSSAPPOPOOIUO </br> TPPPPOSUUYYTY </br> UYTRTOO </br> OTPOOO </br> PASSSOIUYTT </br> UUODFOAASP </br> IIPHGPSSDA </br> OOUDSDFDSU </br> SAOSAAOFFGD </br> UUODFOAASP </br> IIPHGPSSDA </br> OOUDSDFDSS </br> PSHGFDSS',
   degree: 3,
   author: '',
   authorLink: '',
   lyrics: '' },
   { name: '哆啦A梦主题曲',
-  content: '　　WTTUPUO </br>    　　OPOUIUY </br>    　　EYYIAAPOIIUERTY </br>    　　WTTUPUO </br>    　　OPOUIUY </br>    　　EYYIAAPOIIUERYT </br>    　　PPOIOPO </br>    　　YUIYO </br>    　　POIYAPOPOI </br>    　　OPUYT',
+  content: 'WTTUPUO </br> OPOUIUY </br> EYYIAAPOIIUERTY </br> WTTUPUO </br> OPOUIUY </br> EYYIAAPOIIUERYT </br> PPOIOPO </br> YUIYO </br> POIYAPOPOI </br> OPUYT',
   degree: 3,
   author: '',
   authorLink: '',

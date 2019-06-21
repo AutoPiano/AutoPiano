@@ -1,20 +1,24 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
 
+const VERSION = 'latest'
+const CDN_JSDELIVR_BASE = `https://cdn.jsdelivr.net/gh/warpprism/cdn@${VERSION}/autopiano/`
+
 module.exports = {
   build: {
     env: require('./prod.env'),
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '',
+    assetsPublicPath: '/', // prerender
+    // assetsPublicPath: CDN_JSDELIVR_BASE,
     productionSourceMap: false,
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
     // Before setting to `true`, make sure to:
     // npm install --save-dev compression-webpack-plugin
     productionGzip: true,
-    productionGzipExtensions: ['js', 'css'],
+    productionGzipExtensions: ['js', 'css', 'png'],
     // Run the build command with an extra argument to
     // View the bundle analyzer report after build finishes:
     // `npm run build --report`

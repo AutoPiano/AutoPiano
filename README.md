@@ -1,4 +1,4 @@
-### AutoPiano QQ交流群： 600270908
+### 新鲜出炉 AutoPiano QQ交流群： 600270908
 
 [原文链接](https://github.com/WarpPrism/Blog/issues/42)
 

@@ -1,11 +1,8 @@
-### 新鲜出炉 AutoPiano QQ交流群： 600270908
-
-[原文链接](https://github.com/WarpPrism/Blog/issues/42)
+### AutoPiano QQ交流群： 600270908
 
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE) [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
 Hate 996? Come Here & Relax~
-
 
 最近用Vue + Tone.js做了一款钢琴类web应用，名字定为自由钢琴（AutoPiano），人生如音乐，欢快且自由。
 
@@ -21,6 +18,18 @@ AutoPiano支持键盘按键和鼠标点击播放，同时琴键上会有按键�
 > 体验地址： http://www.autopiano.cn
 
 > 项目地址： https://github.com/WarpPrism/AutoPiano
+
+## Dev && Build
+
+~~~
+git clone https://github.com/WarpPrism/AutoPiano.git
+cd AutoPiano
+cnpm install / npm install / yarn install
+# development mode -> http://localhost:5000
+cnpm run dev
+# production mode
+cnpm run build
+~~~
 
 ## 开发这样的应用需要乐理知识吗？
 

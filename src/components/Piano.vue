@@ -179,7 +179,7 @@ import Tone from 'tone'
 import Observe from 'observe'
 import { Notes, OBEvent } from 'config'
 import SmapleLibrary from '@/lib/Tonejs-Instruments'
-// import { debounce } from '@/lib/wutils'
+import { debounce } from '@/lib/wutils'
 
 import pianoAutoPlayMixin from '@/mixins/pianoAutoPlayMixin'
 import xmlAutoPlayMixin from '@/mixins/xmlAutoPlayMixin'

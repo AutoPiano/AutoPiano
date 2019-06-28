@@ -10,11 +10,6 @@ const FriendLinks = [
     url: 'http://www.ruanyifeng.com/blog/'
   },
   {
-    title: '马斯登照明',
-    desc: '现代灯饰 优质家居',
-    url: 'https://www.marsden.cn/'
-  },
-  {
     title: '空缺中...',
     desc: 'waiting for you',
     url: 'javascript:;'

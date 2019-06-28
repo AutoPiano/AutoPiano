@@ -11,8 +11,6 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 var SpritesmithPlugin = require('webpack-spritesmith')
 var CleanWebpackPlugin = require('clean-webpack-plugin')
-var PrerenderSPAPlugin = require('prerender-spa-plugin')
-var Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 
 var env = config.build.env
 
@@ -75,38 +73,6 @@ var webpackConfig = merge(baseWebpackConfig, {
       },
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
-    }),
-    // 预渲染
-    new PrerenderSPAPlugin({
-      // Required - The path to the webpack-outputted app to prerender.
-      staticDir: config.build.assetsRoot,
-      // Required - Routes to render.
-      routes: [ '/', '/mobile', '/links' ],
-      minify: {
-        collapseBooleanAttributes: false,
-        collapseWhitespace: true,
-        decodeEntities: true,
-        keepClosingSlash: true,
-        sortAttributes: true
-      },
-      // 路由懒加载会导致 webpackJsonp is not defined的报错
-      // 异步的script标签剔除
-      postProcess (renderedRoute) {
-        renderedRoute.html = renderedRoute.html.replace(/<script[^<]*src="[^<]*[0-9]+\.[0-9a-z]{20}\.js"><\/script>/g, function (target) {
-          console.log(chalk.bgRed('\n剔除的懒加载标签:'), chalk.magenta(target))
-          return ''
-        })
-        return renderedRoute
-      },
-      renderer: new Renderer({
-        // window注入对象 window['__PRERENDER_INJECTED']
-        injectProperty: '__PRERENDER_INJECTED',
-        inject: {
-          prerender: true
-        },
-        renderAfterTime: 5000,
-        headless: true // 设为false则显示chromium窗口
-      })
     }),
     // keep module.id stable when vender modules does not change
     new webpack.HashedModuleIdsPlugin(),

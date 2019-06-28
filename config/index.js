@@ -1,9 +1,6 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
 
-const VERSION = 'latest'
-const CDN_JSDELIVR_BASE = `https://cdn.jsdelivr.net/gh/warpprism/cdn@${VERSION}/autopiano/`
-
 module.exports = {
   build: {
     env: require('./prod.env'),
@@ -11,7 +8,6 @@ module.exports = {
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/', // prerender
-    // assetsPublicPath: CDN_JSDELIVR_BASE,
     productionSourceMap: false,
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.

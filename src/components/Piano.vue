@@ -148,7 +148,6 @@
     </div>
 
     <div class="piano-options responsive-section-a">
-      <VueShare />
 
       <div class="option-item-wrap">
         <div class="option-item">
@@ -185,14 +184,11 @@ import SmapleLibrary from '@/lib/Tonejs-Instruments'
 import pianoAutoPlayMixin from '@/mixins/pianoAutoPlayMixin'
 import xmlAutoPlayMixin from '@/mixins/xmlAutoPlayMixin'
 
-import VueShare from '@/components/VueShare'
 
 export default {
   name: 'Piano',
   mixins: [pianoAutoPlayMixin, xmlAutoPlayMixin],
-  components: {
-    VueShare
-  },
+  components: {},
   data() {
     return {
       DEV: false,

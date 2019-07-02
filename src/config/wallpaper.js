@@ -1,5 +1,7 @@
 let wallpaper = [
-  'bg_default.jpg'
+  'bg_default.jpg',
+  'bg_eiffel.jpg',
+  'bg_girl.jpg'
 ]
 
 wallpaper = wallpaper.map(item => {

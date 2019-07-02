@@ -52,14 +52,14 @@ export default {
       clearTimeout(this.mountTimer)
       this.mountTimer = null
       let lv = $('.livere-container')
-      
+
       if (lv.css('visibility') == 'hidden') {
         this.delayChangeLiverePos()
       }
     }
   },
   created() {
-    if (window.isMobile || window['__PRERENDER_INJECTED'] || typeof window.LivereTower === 'function') {
+    if (window.isMobile || typeof window.LivereTower === 'function') {
       return
     }
     this.setScript()

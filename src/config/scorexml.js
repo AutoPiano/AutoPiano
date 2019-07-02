@@ -4,9 +4,7 @@
 // const base = '/static/xmlscore/'
 const ext = '.json'
 
-let scorexml = [
-  {}
-]
+let scorexml = []
 
 scorexml.forEach(score => {
   score.playing = false

@@ -16,8 +16,6 @@ Vue.config.productionTip = false
 //   components: { App }
 // })
 
-// https://ssr.vuejs.org/zh/guide/hydration.html
-// prerender
 new Vue({
   router,
   store,

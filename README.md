@@ -30,9 +30,10 @@ cnpm run dev
 cnpm run build
 
 # How to run
-1. build project success
+1. build project successfully
 2. cd dist
-3. anywhere (using static server to serve the assets)
+3. cnpm install -g anywhere
+4. anywhere (using static server to serve the assets)
 ~~~
 
 ## 开发这样的应用需要乐理知识吗？

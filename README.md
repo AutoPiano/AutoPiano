@@ -18,7 +18,7 @@ AutoPiano支持键盘按键和鼠标点击播放，同时琴键上会有按键�
 
 > 项目地址： https://github.com/WarpPrism/AutoPiano
 
-## Dev && Build
+## Dev Build & run 开发构建和运行
 
 ~~~
 git clone https://github.com/WarpPrism/AutoPiano.git
@@ -28,6 +28,11 @@ cnpm install / npm install / yarn install
 cnpm run dev
 # production mode
 cnpm run build
+
+# How to run
+1. build project success
+2. cd dist
+3. anywhere (using static server to serve the assets)
 ~~~
 
 ## 开发这样的应用需要乐理知识吗？

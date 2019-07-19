@@ -23,7 +23,6 @@
     <div class="app-bg" :style="appBgStyle"></div>
 
     <div class="app-content">
-      <VueLivere nodeBelowSelector=".blank-page-pc"/>
       <PageHeader></PageHeader>
       <RandomLyric></RandomLyric>
       <Piano></Piano>
@@ -52,7 +51,6 @@ import RandomLyric from '@/components/RandomLyric'
 import Piano from '@/components/Piano'
 import ManualPlayScoreList from '@/components/ManualPlayScoreList'
 import AutoPlayScoreList from '@/components/AutoPlayScoreList'
-import VueLivere from '@/components/VueLivere'
 
 import { mapActions, mapGetters } from 'vuex'
 import { OBEvent, Wallpaper } from '@/config'
@@ -65,8 +63,7 @@ export default {
     RandomLyric,
     Piano,
     ManualPlayScoreList,
-    AutoPlayScoreList,
-    VueLivere
+    AutoPlayScoreList
   },
   data() {
     return {

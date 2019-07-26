@@ -35,7 +35,6 @@
   <div class="page-links">
     <div class="app-bg" :style="appBgStyle"></div>
     <div class="app-content clearfix">
-      <VueLivere nodeBelowSelector=".blank-page-links"/>
       <PageHeader></PageHeader>
       <div class="links-wrap responsive-section-a clearfix">
         <section class="left-section">
@@ -79,7 +78,6 @@
 <script>
 import PageHeader from '@/components/PageHeader'
 import PageFooter from '@/components/Footer'
-import VueLivere from '@/components/VueLivere'
 
 import { mapActions, mapGetters } from 'vuex'
 import { Links, Wallpaper } from '@/config'
@@ -88,8 +86,7 @@ export default {
   name: '',
   components: {
     PageHeader,
-    PageFooter,
-    VueLivere
+    PageFooter
   },
   mixins: [],
   props: [],

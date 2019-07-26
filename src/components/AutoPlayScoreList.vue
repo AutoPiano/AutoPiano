@@ -75,7 +75,7 @@
         </li>
       </ol>
 
-      <!-- <p class="component-title">
+      <p class="component-title">
         <img src="../assets/images/lab.png" alt="" class="music-img">
         <span class="title">MusicXML实验室<span style="font-size: 12px;">&nbsp;beta</span></span>
       </p>
@@ -91,7 +91,7 @@
             <i class="icon-heartbeat" v-for="(star, sindex) in new Array(item.degree)" :key="sindex"></i>
           </span>
         </li>
-      </ol> -->
+      </ol>
     </div>
 
     <div class="player-view" v-show="currentView=='PLAYER'">

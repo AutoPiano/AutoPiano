@@ -54,7 +54,7 @@
             </div>
           </div>
           <div class="qrcode-wrap">
-            <div class="money">¥1.0 即可</div>
+            <div class="money">¥6.66 鼓励开发者</div>
             <img class="qrcode wxpay" v-show="payType=='WXPAY'" :src="wxPaySrc"/>
             <img class="qrcode alipay" v-show="payType=='ALIPAY'"  :src="aliPaySrc"/>
           </div>

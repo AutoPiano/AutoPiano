@@ -1,0 +1,15 @@
+# 自由钢琴离线版
+
+此文件夹是构建好的AutoPiano代码示例，用于离线环境使用~
+
+运行方法
+
+1. 安装nodejs
+2. 进入命令行
+3. 安装简易静态服务器 npm install -g anywhere
+4. 进入目录 cd autopiano_build_demo
+5. 启动服务 anywhere --port=8888
+6. 浏览器打开 http://localhost:8888/
+
+
+不一定采用上述方式，只要能搭建静态资源服务器即可

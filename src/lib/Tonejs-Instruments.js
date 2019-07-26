@@ -7,7 +7,6 @@
 
 import Tone from 'tone'
 import { NotesMap } from '@/config/notes'
-import { CDN_JSDELIVR_STATIC } from '@/config'
 
 let mapFile = (name) => {
   let file = ''
@@ -23,7 +22,7 @@ var SampleLibrary = {
     minify: false,
     ext: '.[mp3|ogg]', // use setExt to change the extensions on all files // do not change this variable //
     // baseUrl: 'http://lc-SAs97Sjr.cn-n1.lcfile.com', // leancloud file
-    baseUrl: 'static/samples/',
+    baseUrl: '/static/samples/',
     list: ['bass-electric','bassoon','cello','clarinet','contrabass','flute','french-horn','guitar-acoustic','guitar-electric','guitar-nylon', 'harmonium','harp','organ','piano','saxophone','trombone','trumpet','tuba','violin','xylophone'],
     onload: null,
 

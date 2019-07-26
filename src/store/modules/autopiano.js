@@ -1,9 +1,8 @@
-import { CDN_JSDELIVR_STATIC } from '@/config'
 
 // mutation name
 const SET_WALLPAPER = 'SET_WALLPAPER';
 
-const DEFAULT_WALLPAPER = CDN_JSDELIVR_STATIC + 'images/bg_default.jpg'
+const DEFAULT_WALLPAPER = '/static/images/bg_default.jpg'
 
 const state = {
 	wallpaper: DEFAULT_WALLPAPER

@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@tonejs/midi": "^2.0.0",
     "babel-polyfill": "^6.26.0",
     "leancloud-storage": "^3.13.0",
     "tone": "^13.4.9",

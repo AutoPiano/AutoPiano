@@ -5,6 +5,7 @@
   .app-content { width: 100%; height: 100%; overflow-y: scroll; position: relative;
     .piano-scroll-wrap { overflow: hidden; }
     .score-section { width: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .section-title { margin: 30px auto 20px; font-size: 28px; font-weight: 500; color: #333; }
     .right-drawer { width: 500px; height: 100%; position: fixed; top: 0; right: -500px; z-index: 100; border-left: solid 1px #ccc; transition: all .3s ease-in-out;
       .trigger { width: 30px; height: 86px; font-size: 16px; text-align: center; padding-top: 7px;  position: absolute; top: 50%; left: -32px; background: @c-red; color: #fff; cursor: pointer; z-index: 101; }
       // .trigger::before { content: ''; width: 8px; height: 8px; background: #f00;; position: absolute; top: -2px; right: -2px; border-radius: 50%; }
@@ -23,6 +24,8 @@
     <div class="app-bg" :style="appBgStyle"></div>
 
     <div class="app-content">
+      <h2 style="color: #c00;">请勿基于原版代码构建网站，以免影响原网站SEO，除非大量修改源代码。感谢配合开源工作。</h2>
+      <h4 style="color: #c00;">Do not build a website based on the original source code, so as not to affect SEO of the original website, unless a large number of changes in the source code. Thank you for your cooperation.</h4>
       <PageHeader></PageHeader>
       <RandomLyric></RandomLyric>
       <Piano></Piano>
@@ -30,6 +33,8 @@
         <ManualPlayScoreList></ManualPlayScoreList>
         <AutoPlayScoreList></AutoPlayScoreList>
       </div>
+      <h2 class="section-title responsive-section-a">探索实体乐器</h2>
+      <CommodityList />
       <div class="right-drawer" :class="{'show': rightDrawerShow}">
         <div class="trigger" @click="toggleRightDrawer">歌曲列表</div>
         <div class="close" @click="hideRightDrawer">X</div>
@@ -51,6 +56,7 @@ import RandomLyric from '@/components/RandomLyric'
 import Piano from '@/components/Piano'
 import ManualPlayScoreList from '@/components/ManualPlayScoreList'
 import AutoPlayScoreList from '@/components/AutoPlayScoreList'
+import CommodityList from '@/components/CommodityList.vue'
 
 import { mapActions, mapGetters } from 'vuex'
 import { OBEvent, Wallpaper } from '@/config'
@@ -63,7 +69,8 @@ export default {
     RandomLyric,
     Piano,
     ManualPlayScoreList,
-    AutoPlayScoreList
+    AutoPlayScoreList,
+    CommodityList
   },
   data() {
     return {

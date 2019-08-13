@@ -183,11 +183,11 @@ import { debounce } from '@/lib/wutils'
 
 import pianoAutoPlayMixin from '@/mixins/pianoAutoPlayMixin'
 import xmlAutoPlayMixin from '@/mixins/xmlAutoPlayMixin'
-
+import midiAutoPlayMixin from '@/mixins/midiAutoPlayMixin'
 
 export default {
   name: 'Piano',
-  mixins: [pianoAutoPlayMixin, xmlAutoPlayMixin],
+  mixins: [pianoAutoPlayMixin, xmlAutoPlayMixin, midiAutoPlayMixin],
   components: {},
   data() {
     return {
@@ -251,13 +251,16 @@ export default {
         //   console.log(e)
         // }
       })
+      // MIDI 自动播放
+      Observe.$on(OBEvent.AUTO_PLAY_MIDI, (midiUrl) => {
+        this.loadMidiAndPlay(midiUrl)
+      })
       // 暂停自动播放
-      Observe.$on(OBEvent.PAUSE_AUTO_PLAY, (scoreItem) => {
+      Observe.$on(OBEvent.STOP_AUTO_PLAY, (scoreItem) => {
         this.pauseAutoPlay(scoreItem)
         this.pauseXMLPlay()
-      })
-      Observe.$on(OBEvent.PAUSE_XML_AUTO_PLAY, (scoreItem) => {
         this.pauseXMLPlay()
+        this.stopMidiPlay()
       })
     },
     getNoteByKeyCode(keyCode) {

@@ -1,12 +1,7 @@
-import MIDI from "@tonejs/midi"
-// let MIDI = require('@tonejs/midi/dist/Midi')
-// 需要fix @tonejs/midi/dist/Midi 下的export语句 或升级webpack版本
-// export default Midi
 import Observe from 'observe'
 import { isNoteNameValid } from '@/utils'
 import { OBEvent } from 'config'
-
-
+import { Midi } from '@tonejs/midi'
 
 export default {
   data() {
@@ -38,7 +33,7 @@ export default {
   },
   methods: {
     loadMidiAndPlay(midi) {
-      MIDI.fromUrl(midi).then((data) => {
+      Midi.fromUrl(midi).then((data) => {
         this.currentMidiData = data
         this.midiOffset = 0
         this.playMidi()

@@ -37,7 +37,6 @@
     <div class="list-view">
       <p class="component-title">
         <span class="title">{{ sectionTitle }}</span>
-        <a target="_blank" href="https://github.com/WarpPrism/AutoPiano/issues/9" class="join">我要参与贡献&nbsp;!</a>
         <span class="degree" v-show="listShow">困难度</span>
       </p>
 

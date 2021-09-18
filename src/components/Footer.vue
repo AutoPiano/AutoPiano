@@ -38,10 +38,6 @@
       <li class="footer-item"><a target="_blank" href="http://www.beian.miit.gov.cn/">粤ICP备19061906号-1</a></li>
     </ul>
     <ul class="footer-ul right-section">
-      <li class="footer-item"><a target="_blank" href="https://i.loli.net/2019/05/15/5cdaf0d79ceef22845.jpg">地铁图小程序</a></li>
-      &nbsp;|&nbsp;
-      <li class="footer-item"><a target="_blank" href="https://www.yuque.com/lnexttickl/sfsqc5/ifz93n" class="info-txt em">用户使用指南</a></li>
-      &nbsp;|&nbsp;
       <li class="footer-item">
         <a href="javascript:;" @click="toggleSupportShow()" class="support-txt em">赞赏支持</a>
         <div class="popup-container" v-show="supportShow">

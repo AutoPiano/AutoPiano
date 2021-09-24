@@ -1,5 +1,5 @@
 
-[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE) [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+[![Financial Contributors on Open Collective](https://opencollective.com/AutoPiano/all/badge.svg?label=financial+contributors)](https://opencollective.com/AutoPiano) [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE) [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
 Hate 996? Come Here & Relax~
 
@@ -240,3 +240,33 @@ playNote(notename = 'C4', duration = '2n') {
 
 
 原创不易，转载分享时请注明出处~
+
+## Contributors
+
+### Code Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+<a href="https://github.com/WarpPrism/AutoPiano/graphs/contributors"><img src="https://opencollective.com/AutoPiano/contributors.svg?width=890&button=false" /></a>
+
+### Financial Contributors
+
+Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/AutoPiano/contribute)]
+
+#### Individuals
+
+<a href="https://opencollective.com/AutoPiano"><img src="https://opencollective.com/AutoPiano/individuals.svg?width=890"></a>
+
+#### Organizations
+
+Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/AutoPiano/contribute)]
+
+<a href="https://opencollective.com/AutoPiano/organization/0/website"><img src="https://opencollective.com/AutoPiano/organization/0/avatar.svg"></a>
+<a href="https://opencollective.com/AutoPiano/organization/1/website"><img src="https://opencollective.com/AutoPiano/organization/1/avatar.svg"></a>
+<a href="https://opencollective.com/AutoPiano/organization/2/website"><img src="https://opencollective.com/AutoPiano/organization/2/avatar.svg"></a>
+<a href="https://opencollective.com/AutoPiano/organization/3/website"><img src="https://opencollective.com/AutoPiano/organization/3/avatar.svg"></a>
+<a href="https://opencollective.com/AutoPiano/organization/4/website"><img src="https://opencollective.com/AutoPiano/organization/4/avatar.svg"></a>
+<a href="https://opencollective.com/AutoPiano/organization/5/website"><img src="https://opencollective.com/AutoPiano/organization/5/avatar.svg"></a>
+<a href="https://opencollective.com/AutoPiano/organization/6/website"><img src="https://opencollective.com/AutoPiano/organization/6/avatar.svg"></a>
+<a href="https://opencollective.com/AutoPiano/organization/7/website"><img src="https://opencollective.com/AutoPiano/organization/7/avatar.svg"></a>
+<a href="https://opencollective.com/AutoPiano/organization/8/website"><img src="https://opencollective.com/AutoPiano/organization/8/avatar.svg"></a>
+<a href="https://opencollective.com/AutoPiano/organization/9/website"><img src="https://opencollective.com/AutoPiano/organization/9/avatar.svg"></a>

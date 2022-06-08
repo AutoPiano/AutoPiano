@@ -13,3 +13,9 @@ It's also an excellent music platform for all people.
 **This repo is only for Learning purpose.**
 
 **Not safe & suitable for deploying.**
+
+
+## Development
+
+- yarn install
+- yarn start

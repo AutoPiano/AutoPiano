@@ -1,5 +1,4 @@
-
-const lyrics =  [
+const lyrics = [
   `长亭外，古道边，芳草碧连天，晚风拂柳笛声残，夕阳山外山...`,
   `你可知Macau，不是我真姓...`,
   `what time will you be here now? it's a quater past seven now...`,
@@ -66,7 +65,6 @@ const lyrics =  [
   `永远自由自我，永远高唱我歌，走遍千里`,
   `檐下窗棂斜映枝丫 与你席地对坐饮茶`,
   `情深深雨蒙蒙 多少楼台烟雨中 记得当初你侬我侬 车如流水马如龙`
-]
+];
 
-export default lyrics
-
+export default lyrics;

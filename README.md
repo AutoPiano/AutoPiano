@@ -6,9 +6,10 @@
 
 https://www.autopiano.cn
 
-AutoPiano is a totally free tool for playing a virtual piano online.
+AutoPiano allows you to play a virtual piano online freely.
 
-Excellent Music Platform With Computer Science in Future
+It's also an excellent music platform for all people.
 
-**Only for Learning purpose.**
+**This repo is only for Learning purpose.**
+
 **Not safe & suitable for deploying.**
